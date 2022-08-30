@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+        #item{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            border:1px solid blue;
+        }
+
+        #thankyou{
+            width: 100%;
+            padding: 2rem;
+            font-size:200%;
+            text-align: center;
+            border:1px solid yellow;
+        }
+
+        #back{
+            width: 100%;
+            text-align: center;
+            border:1px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="item">
+        <div id="thankyou">line-heightは行間を指定するCSSです。「line-height:1.5」なら、文字を含めて1.5文字分の高さとなります。
+
+            heightを指定するときはこのline-height×行数を指定します。</div>
+        <div id="back">textareaはお問い合わせ本文など、複数行のテキストを入力できるhtmlです。
+
+            input type="text"と基本は同じですが、heightの指定を考える必要があります。</div>
+    </div>
+</body>
+</html>
